@@ -24,19 +24,99 @@
         </nav>
     </header>
     <section class="greeting">
-      <!-- greeting to the user -->
+      <h1>Hello User! enjoy Fintrack </h1>
+      <h1>Date: 12-25-1991</h1>
     </section>
-    <main>
+    <main class="dashboard-main">
       <section class="add-transaction">
+        <input type="number" placeholder="Enter income">
+        <button class="income">Add Income</button>
+        <br>
+        <input type="number" placeholder="Enter Expence">
+        <button class="income">Add Expence</button>
         <!-- Input fields for amount and description. Buttons for "Add Income" and
         "Add Expense". -->
       </section>
       <section class="transaction-list">
+        <div class="transaction">
+          <div class="table">
+            <p class="date">
+              20:8:2024
+            </p>
+            <p class="description">
+              school fees
+            </p>
+            <p class="amount">
+              5000$
+            </p>
+          </div>
+          <div class="transaction">
+            <p class="date">
+              20:8:2024
+            </p>
+            <p class="description">
+              school fees
+            </p>
+            <p class="amount">
+              5000$
+            </p>
+          </div><div class="transaction">
+            <p class="date">
+              20:8:2024
+            </p>
+            <p class="description">
+              school fees
+            </p>
+            <p class="amount">
+              5000$
+            </p>
+          </div><div class="transaction">
+            <p class="date">
+              20:8:2024
+            </p>
+            <p class="description">
+              school fees
+            </p>
+            <p class="amount">
+              5000$
+            </p>
+          </div><div class="transaction">
+            <p class="date">
+              20:8:2024
+            </p>
+            <p class="description">
+              school fees
+            </p>
+            <p class="amount">
+              5000$
+            </p>
+          </div>
+        </div>
+        
         <!-- A scrollable list or table showing recent transactions (columns: Date, Description, Amount, Type). -->
       </section>
       <section class="summary">
+        <div class="total-income">
+          <p>Total Income</p>
+          <span class="income">
+            50000$
+          </span>
+        </div>
+        <div class="total-expence">
+          <p>Total Expence</p>
+          <span class="expence">
+            37000$
+          </span>
+        </div>
+        <div class="balance">
+          <p>Total Balance</p>
+          <span class="balance">
+            13000$
+          </span>
+        </div>
         <!-- Three boxes showing: Total Income Total Expense Balance -->
       </section>
     </main>
   </body>
+  <script src="js/app.js"></script>
 </html>

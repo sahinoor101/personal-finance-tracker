@@ -64,11 +64,11 @@ i {
 header {
   display: flex;
   background-color: var(--nav-color);
-  justify-content: space-between;
+  justify-content:space-between;
 }
 header > h1 {
   text-align: center;
-  margin: 1.2rem;
+  margin: 1.2rem 0 1.2rem 10rem;
   font-size: var(--font-size-heading);
   font-family: var(--secondary-font);
   color: var(--link-color);
@@ -138,7 +138,7 @@ nav a:any-link {
 h1 {
   font-size: var(--font-size-heading);
 }
-img {
+header img {
   width: 4.7rem;
   margin: 2px;
   border-radius: 50%;
@@ -287,4 +287,107 @@ a {
   display: block;
   text-decoration: none;
   color: hsl(0, 0%, 90%);
+}
+
+
+/* dashboard */
+.greeting{
+  text-align: center;
+  padding: 1rem
+
+}
+.greeting h1{
+  font-size: var(--font-size-heading);
+  font-family: var(--heading-font);
+
+}
+.dashboard-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.add-transaction{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  padding: 2rem 20%;
+  background-color: var(--main-color);
+  border-radius: 25px;
+}
+.add-transaction input{
+  font-size: var(--font-size-body);
+  padding: 0.5rem;
+  border:none;
+  border-radius: 5px;
+  margin: 0 0 0.3rem 0;
+}
+.add-transaction button{
+  font-size: var(--font-size-body);
+  border-radius: 5px;
+  border: none;
+  padding: 0.6rem;
+  background-color: var(--nav-color);
+  color: var(--text-color);
+}
+.add-transaction button:hover , .add-transaction button:active{
+  background-color: var(--primary-color);
+}
+.transaction-list{
+  display: flex;
+  background-color: var(--main-color);
+  width: 80vw;
+  height: 25vh;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.transaction div{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10rem 1fr 9rem;
+}
+.transaction p{
+  padding: 1rem;
+  /* text-align: center; */
+  font-size: var(--font-size-body);
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+.transaction{
+  overflow: auto;
+  width: 95%;
+}
+.summary{
+  width: 80vw;
+  background-color: var(--main-color);
+  border-radius: 25px;
+  height: 30vh;
+  display: grid;
+  /* grid-template-areas: "income expence balance"; */
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: auto;
+}
+.summary > div{
+  width: 80%;
+  height: 80%;
+  background-color: var(--nav-color);
+  margin: 2rem;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1rem;
+  /* overflow: auto; */
+}
+.summary > div > p{
+  margin: 0.3rem 0 0 0;
+  font-size: var(--font-size-heading);
+}
+.summary > div > span{
+  display: block;
+  font-size: var(--font-size-heading);
+  padding: 1rem;
+  font-family: var(--technical-font);
+  font-weight: bolder;
+  margin: 2rem 0 0 0;
 }
